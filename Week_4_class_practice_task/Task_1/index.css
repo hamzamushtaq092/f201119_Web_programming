@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color:  #5A1527;
+}
+.banner{
+    font: 400 16px/24px px Macan,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+.logo_container{
+    margin-left: 4%;
+}
+.logo_container img{
+    height: 30px;
+    padding-right: 300px;
+}
+
+.maindiv{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+    height: 70px;
+    align-items: center; 
+}
+.nav_bar{
+    min-width: 50%;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+}
+.nav_bar a{
+    text-decoration: none;
+}
+
+.language{
+    display: flex;
+    justify-content: center;
+}
+
+.signin_btn{
+   min-width: 5%;
+   display: flex;
+  justify-content:end;
+}
+
+.signin_btn button{
+    padding: 5px 20px;
+    font-size: 15px;
+    background-color: #5A1527;
+    border: 1px solid white;
+}
+
+.signin_btn button:hover{
+    background-color:  #ffffff;
+    color: #5A1527;
+}
+.content{
+    margin-top: 15%;
+}
+
+.header-title{
+    font-size: 50px;
+    margin-left : 5%;
+   
+}
+.search_bar{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.search_bar input{
+    margin-left:5%;
+    width: 550px;
+    height: 50px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+.search_bar span{
+    background-color: green;
+    height: 50px;
+    width: 50px;
+    padding: 12px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.search_bar_below_btn_container{
+    display: flex;
+    margin-left: 5% ;
+    margin-top: 15px;
+    max-width: 500px;
+    justify-content:space-around;
+}
+
+.search_bar_below_btn{
+    border-radius: 50px;
+    border: 1px solid white;
+    background-color:  #5A1527;
+    padding: 3px 10px;
+}
+
+.search_bar_below_btn_container button:hover{
+    background-color:  #ffffff;
+    color: #5A1527;
+}

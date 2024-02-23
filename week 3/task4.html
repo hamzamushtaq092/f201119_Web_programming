@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Month Days Calculator</title>
+</head>
+<body>
+  <h2>Month Days Calculator</h2>
+  <label for="monthInput">Enter the name of the month (e.g., Jan, Feb, etc.):</label>
+  <input type="text" id="monthInput" placeholder="e.g., Jan" required>
+  <button onclick="calculateDays()">Calculate</button>
+
+  <div id="result">
+   
+  </div>
+
+  <script>
+    function calculateDays() {
+      var monthName = document.getElementById('monthInput').value.toLowerCase();
+      var daysInMonth;
+
+      if (monthName === 'jan' || monthName === 'mar' || monthName === 'may' || monthName === 'jul' || monthName === 'aug' || monthName === 'oct' || monthName === 'dec') {
+        daysInMonth = 31;
+      } else if (monthName === 'apr' || monthName === 'jun' || monthName === 'sep' || monthName === 'nov') {
+        daysInMonth = 30;
+      } else if (monthName === 'feb') {
+        daysInMonth = 28; 
+      } else {
+        daysInMonth = 'Invalid month name';
+      }
+
+      document.getElementById('result').innerHTML = `<p>Number of days in ${monthName}: ${daysInMonth}</p>`;
+    }
+  </script>
+</body>
+</html>
