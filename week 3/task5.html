@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multiplication Table</title>
+</head>
+<body>
+  <h2>Multiplication Table</h2>
+  <label for="numberInput">Enter any number:</label>
+  <input type="number" id="numberInput" min="1" required>
+  <button onclick="printMultiplicationTable()">Print Table</button>
+
+  <div id="table">
+  </div>
+
+  <script>
+    function printMultiplicationTable() {
+      var number = parseInt(document.getElementById('numberInput').value);
+    
+      if (isNaN(number)) {
+        document.getElementById('table').innerHTML = '<p>Please enter a valid number.</p>';
+        return;
+      }
+      var tableHTML = '<h3>Multiplication Table of ' + number + '</h3>';
+      tableHTML += '<table border="1">';
+      for (var i = 1; i <= 10; i++) {
+        tableHTML += '<tr>';
+        tableHTML += '<td>' + number + ' &times; ' + i + '</td>';
+        tableHTML += '<td>' + (number * i) + '</td>';
+        tableHTML += '</tr>';
+      }
+      tableHTML += '</table>';
+      document.getElementById('table').innerHTML = tableHTML;
+    }
+  </script>
+</body>
+</html>

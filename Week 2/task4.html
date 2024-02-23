@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.polaroid {
+        width: 250px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+        margin: auto;
+        animation: myfirst 5s 2;
+        position: relative;
+        animation-direction: alternate;
+      }
+      div.container {
+        padding: 10px;
+      }
+      @keyframes myfirst {
+        0% {
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          left: 200px;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="polaroid">
+      <img src="1.jpg" alt="Norway" style="width: 100%" />
+      <div class="container">
+        <p>Lorem</p>
+      </div>
+    </div>
+  </body>
+</html>
+

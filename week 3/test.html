@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Helloe world 
+    </p>
+    <p id='demo'></p>
+</body>
+<script> 
+let sum=0;
+
+const arr=[10,20,30];
+
+arr.forEach(myFunc);
+
+function myFunc(items){
+    sum+=items
+}
+document.getElementById('demo').innerHTML="The sum = "+sum
+
+
+var newtag = document.createElement("h1")
+newtag.innerHTML='Course Name : Web Programing';
+document.body.appendChild(newtag)
+
+var newtag = document.createElement("h3")
+newtag.innerHTML='Roll No :20F-1119';
+document.body.appendChild(newtag)
+
+var newtag = document.createElement("h3")
+newtag.innerHTML='Its me Hamza Mushtaq';
+document.body.appendChild(newtag)
+
+
+
+</script>
+</html>
