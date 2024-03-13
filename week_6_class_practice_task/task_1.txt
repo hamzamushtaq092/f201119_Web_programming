@@ -1,0 +1,13 @@
+HTML Comments:
+<!-- This is a comment in HTML -->
+
+CSS Comments:
+/* This is a comment in CSS */
+ 
+JavaScript Comments:
+// This is a single-line comment in JavaScript
+
+/*
+This is a multi-line
+comment in JavaScript
+*/

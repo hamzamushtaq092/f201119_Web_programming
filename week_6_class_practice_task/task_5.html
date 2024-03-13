@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Find Class and ID of Clicked Element</title>
+</head>
+<body>
+    <div id="myDiv" class="myClass" style="border: 1px solid black ;width:80px;">Click me</div>
+    <script>
+        $(document).ready(function(){
+            $("#myDiv").click(function(){
+                var id = $(this).attr("id");
+                var className = $(this).attr("class");
+                alert("ID: " + id + ", Class: " + className);
+            });
+        });
+    </script>
+</body>
+</html>

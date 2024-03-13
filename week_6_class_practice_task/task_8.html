@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Div Animation with jQuery</title>
+    <style>
+        #myDiv {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv"></div>
+    <script>
+        $(document).ready(function(){
+            $("#myDiv").animate({left: '250px'}, 8000);
+        });
+    </script>
+</body>
+</html>
+
